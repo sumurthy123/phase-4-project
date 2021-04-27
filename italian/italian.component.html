@@ -1,0 +1,79 @@
+<body>
+
+    <div class="container">
+        <h2 class="py-3 text-center"><i>Italian-Items</i></h2>
+        <div class="row py-5">
+            <div class="col">
+
+              
+               
+                <div class="card-columns">    
+                    <div class="card">
+                        <img src="https://wallpapercave.com/wp/wp3030132.jpg"  class="card-img-top" alt=""> 
+                        <div class="card-body">
+                          <h4 class="card-title"><i>lasagna</i></h4>
+                          <h5>Price: $40</h5><br/>
+                          <button class="btn btn-primary" (click)="addtocart('lasagna',40)">Add To Cart</button>
+                          <button class="btn btn-danger ml-5" (click)="Callremove('lasagna')"><i>remove</i></button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://wallpapercave.com/wp/wp3030065.jpg" class="card-img-top" alt=""> 
+                        <div class="card-body">
+                          <h4 class="card-title"><i>sphagetti</i></h4>
+                          <h5>Price: $60</h5>
+                          
+                         <button class="btn btn-primary" (click)="addtocart('sphagetti',60)">Add to Cart</button>
+                         <button class="btn btn-danger ml-5" (click)="Callremove('sphagetti')"><i>remove</i></button>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="card">
+                        <img src="https://www.watermelon.org/wp-content/uploads/2020/03/Carpaccio-with-fried-prosciutto-.jpg" class="card-img-top" alt=""> 
+                        <div class="card-body">
+                          <h4 class="card-title"><i>Carpessio</i></h4>
+                          <h5>Price: $37</h5>
+                          
+                         <button class="btn btn-primary" (click)="addtocart('carpessio',37)">Add to Cart</button>
+                         <button class="btn btn-danger ml-5" (click)="Callremove('carpessio')"><i>remove</i></button>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <button class="btn btn-primary" data-toggle="modal" data-target=".modal" (click)="Callget()" >Get Cart</button>
+                    </div>
+
+                      
+                    <div class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Your cart</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="cart-body">
+
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="http://localhost:4200/evaluation"><button type="button" class="btn btn-primary">Check out</button></a>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,71 @@
+<body>
+    <div class="container" style="border: 2px solid black;">
+        <h2 class="py-3 text-center"><b>Checkout page</b></h2>
+        <div class="row py-5">
+            <div class="col-6">
+                <div class="form-group">
+                    <label><b>NAME</b></label>
+                    <input type="text" class="form-control">
+                    </div>
+    
+                    <div class="form-group">
+                        <label><b>email</b></label>
+                        <input type="text" class="form-control">
+                    </div>
+    
+                    <div class="form-group">
+                        <h6><b>password</b></h6>
+                        <input type="password" class="form-control">
+                        <small class="form-text">
+                            password sholud be min 8 characters
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>country</b></label>
+                        <select class="form-control">
+                            <option value="">india</option>
+                            <option value="">america</option>
+                            <option value="">france</option>
+                            <option value="">new zealand</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><b>feed back</b></label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+            </div>
+            <div class="col-6">
+
+                <div class="form-group " style="font-size: larger;">
+                    <label><b>payment</b></label>
+                    <div class="form-check">
+                    <input type="radio" class="form-check-input" name="payment" id="credit-cardradio">
+                    <label for="credit-cardradio" class="form-check-label"><b>credit-card</b></label>
+                    </div>
+
+                    <div class="form-check" >
+                        <input type="radio" class="form-check-input" name="payment" id="debit-cardradio">
+                        <label for="debit-cardradio" class="form-check-label"><b>debit-card</b></label>
+                    </div>
+                </div><br/><br/>
+                <div class="form-group">
+                    <label><b>Enter card number:</b></label>
+                    <input type="text" class="form-control" maxlength="16" style="width: min-content;" placeholder="1234 / 5678 /5678 /7538">
+                </div><br/>
+                <div class="form-group">
+                    <label><b>Card expiry :</b></label>
+                    <input type="text" class="form-control" maxlength="10" style="width: 150px;" placeholder="DD/MM/YYYY">
+                </div><br/>
+
+                <div>
+                    <button class="btn btn-primary" (click)="Callpayment()"><i>Submit</i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+   
+</body>
+

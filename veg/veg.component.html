@@ -1,0 +1,77 @@
+<body>
+    
+    <div class="container">
+        <h2 class="py-3 text-center"><i>Veg-Items</i></h2>
+        <div class="row py-5">
+            <div class="col">
+
+              
+               
+                <div class="card-columns">    
+                    <div class="card">
+                        <img src="https://5.imimg.com/data5/NT/SK/MY-45371487/white-radish-500x500.jpg"  class="card-img-top" alt=""> 
+                        <div class="card-body">
+                          <h4 class="card-title"><i>Radish</i></h4>
+                          <h5>Price: $10</h5><br/>
+                          <button class="btn btn-primary" (click)="addtocart('radish',10)">Add To Cart</button>
+                          <button class="btn btn-danger ml-5" (click)="Callremove('radish')"><i>remove</i></button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://cdn.shopify.com/s/files/1/1380/2059/products/Carrot-Orange_grande.jpg?v=1598079671" class="card-img-top" alt=""> 
+                        <div class="card-body">
+                          <h4 class="card-title"><i>Carrot</i></h4>
+                          <h5>Price: $20</h5>
+                          
+                         <button class="btn btn-primary" (click)="addtocart('carrot',20)">Add to Cart</button>
+                         <button class="btn btn-danger ml-5" (click)="Callremove('carrot')"><i>remove</i></button>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="card">
+                        <img src="https://www.jiomart.com/images/product/600x600/590003537/cauliflower-per-pc-0-20200710.jpg" class="card-img-top" alt=""> 
+                        <div class="card-body">
+                          <h4 class="card-title"><i>Cauli flower</i></h4>
+                          <h5>Price: $15</h5>
+                          
+                         <button class="btn btn-primary" (click)="addtocart('cauliflower',15)">Add to Cart</button>
+                         <button class="btn btn-danger ml-5" (click)="Callremove('cauliflower')"><i>remove</i></button>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <button class="btn btn-primary" data-toggle="modal" data-target=".modal" (click)="Callget()" >Get Cart</button>
+                    </div>
+                    
+
+                    <div class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Your cart</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="cart-body">
+
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="http://localhost:4200/evaluation"><button type="button" class="btn btn-primary">Check out</button></a>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>   

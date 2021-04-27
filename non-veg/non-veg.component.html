@@ -1,0 +1,78 @@
+<body>
+    <div class="container">
+        <h2 class="py-3 text-center"><i>Non-Veg-Items</i></h2>
+        <div class="row py-5">
+            <div class="col">
+
+              
+               
+                <div class="card-columns">    
+                    <div class="card">
+                        <img src="https://recipesofhome.com/wp-content/uploads/2020/08/chicken-65-recipe-735x490.jpg"  class="card-img-top" alt=""> 
+                        <div class="card-body">
+                          <h4 class="card-title"><i>chicken</i></h4>
+                          <h5>Price: $10</h5><br/>
+                          <button class="btn btn-primary" (click)="addtocart('chicken',10)">Add To Cart</button>
+                          <button class="btn btn-danger ml-5" (click)="Callremove('chicken')"><i>remove</i></button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://thumbs.dreamstime.com/b/lamb-curry-mutton-traditional-spicy-indian-dish-authentic-vindaloo-fiery-red-goan-154072181.jpg" class="card-img-top" alt=""> 
+                        <div class="card-body">
+                          <h4 class="card-title"><i>mutton</i></h4>
+                          <h5>Price: $20</h5>
+                          
+                         <button class="btn btn-primary" (click)="addtocart('mutton',20)">Add to Cart</button>
+                         <button class="btn btn-danger ml-5" (click)="Callremove('mutton')"><i>remove</i></button>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="card">
+                        <img src="https://image.shutterstock.com/image-photo/grilled-fish-roasted-potatoes-vegetables-260nw-519023956.jpg" class="card-img-top" alt=""> 
+                        <div class="card-body">
+                          <h4 class="card-title"><i>fish</i></h4>
+                          <h5>Price: $15</h5>
+                          
+                         <button class="btn btn-primary" (click)="addtocart('fish',15)">Add to Cart</button>
+                         <button class="btn btn-danger ml-5" (click)="Callremove('fish')"><i>remove</i></button>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <button class="btn btn-primary" data-toggle="modal" data-target=".modal" (click)="Callget()" >Get Cart</button>
+                    </div>
+
+                      
+                    <div class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Your cart</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="cart-body">
+
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="http://localhost:4200/evaluation"><button type="button" class="btn btn-primary">Check out</button></a>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
